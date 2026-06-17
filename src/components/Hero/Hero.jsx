@@ -70,7 +70,9 @@ export default function Hero() {
         <i className={`bi bi-mouse2 ${styles.mouseIcon}`} />
       </div>
 
-      <div className={styles.arrow} aria-hidden="true">↗</div>
+      <div className={styles.arrow} aria-hidden="true">
+        <i className="bi bi-arrow-up-right" />
+      </div>
 
       <div className={styles.decorSquares} aria-hidden="true">
         <span className={styles.sq1} />

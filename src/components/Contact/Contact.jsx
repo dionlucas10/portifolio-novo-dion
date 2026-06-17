@@ -76,7 +76,10 @@ export default function Contact() {
             </div>
 
             <button type="submit" className={styles.submitBtn}>
-              {submitted ? '✓ ENVIADO!' : '✦ ENVIAR AGORA'}
+              {submitted
+                ? <><i className="bi bi-check-lg" /> ENVIADO!</>
+                : <><i className="bi bi-send" /> ENVIAR AGORA</>
+              }
             </button>
           </form>
 

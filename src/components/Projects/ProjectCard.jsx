@@ -16,13 +16,13 @@ export default function ProjectCard({ project, reversed }) {
 
       <div className={styles.infoSide}>
         <span className={styles.tag}>
-          <span className={styles.tagEmoji}>{project.emoji}</span>
+          <i className={`bi ${project.icon} ${styles.tagIcon}`} />
           {project.tag}
         </span>
         <h3 className={styles.title}>{project.title}</h3>
         <p className={styles.description}>{project.description}</p>
         <a href={project.link} className={styles.linkBtn} aria-label={`Ver ${project.title}`}>
-          ↗
+          <i className="bi bi-arrow-up-right" />
         </a>
       </div>
     </div>

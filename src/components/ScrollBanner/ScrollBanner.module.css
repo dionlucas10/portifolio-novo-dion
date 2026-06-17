@@ -14,11 +14,25 @@
 }
 
 .content {
+  display: inline-flex;
+  align-items: center;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.18em;
   color: var(--text-secondary);
-  padding-right: 0;
+  margin-right: 16px;
+}
+
+.item i {
+  font-size: 6px;
+  color: var(--accent-blue);
+  opacity: 0.6;
 }
 
 @keyframes scroll {

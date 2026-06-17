@@ -5,6 +5,7 @@ import Projects from './components/Projects/Projects'
 import ScrollBanner from './components/ScrollBanner/ScrollBanner'
 import Technologies from './components/Technologies/Technologies'
 import Certificates from './components/Certificates/Certificates'
+import Experience from './components/Experience/Experience'
 import Testimonials from './components/Testimonials/Testimonials'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
@@ -20,6 +21,7 @@ export default function App() {
         <ScrollBanner />
         <Technologies />
         <Certificates />
+        <Experience />
         <Testimonials />
         <Contact />
       </main>

@@ -65,3 +65,22 @@ button {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Slide animations para trilha */
+.slide-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.slide-left.visible,
+.slide-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
