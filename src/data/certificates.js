@@ -1,0 +1,51 @@
+export const certificates = [
+  {
+    id: 1,
+    image: '/assets/certificados/trilhaHtml.png',
+    title: 'Trilha de HTML',
+    description: 'Certificado de conclusão da trilha completa de HTML.',
+    link: '#',
+  },
+  {
+    id: 2,
+    image: '/assets/certificados/do_zero.png',
+    title: 'Do Zero ao Desenvolvimento',
+    description: 'Certificado de conclusão do curso do zero.',
+    link: '#',
+  },
+  {
+    id: 3,
+    image: '/assets/certificados/angular.png',
+    title: 'Angular',
+    description: 'Certificado de conclusão do curso de Angular.',
+    link: '#',
+  },
+  {
+    id: 4,
+    image: '/assets/certificados/front-end-IA.png',
+    title: 'Front-End com IA',
+    description: 'Certificado de conclusão do curso de Front-End com Inteligência Artificial.',
+    link: '#',
+  },
+  {
+    id: 5,
+    image: '/assets/certificados/implementando_CRUD.png',
+    title: 'Implementando CRUD',
+    description: 'Certificado de conclusão do curso de implementação de CRUD.',
+    link: '#',
+  },
+  {
+    id: 6,
+    image: '/assets/certificados/dados_pythonII.png',
+    title: 'Dados com Python II',
+    description: 'Certificado de conclusão do curso de análise de dados com Python.',
+    link: '#',
+  },
+  {
+    id: 7,
+    image: '/assets/certificados/medMastery.png',
+    title: 'MedMastery',
+    description: 'Certificado de conclusão do curso MedMastery.',
+    link: '#',
+  },
+]

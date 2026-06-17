@@ -1,0 +1,16 @@
+export const technologies = [
+  { name: 'HTML5',        logo: '/assets/logos/html.png' },
+  { name: 'CSS3',         logo: '/assets/logos/css-3.png' },
+  { name: 'JavaScript',   logo: '/assets/logos/java-script.png' },
+  { name: 'TypeScript',   logo: '/assets/logos/typescript.png' },
+  { name: 'React',        logo: '/assets/logos/physics.png' },
+  { name: 'Angular',      logo: '/assets/logos/angular.png' },
+  { name: 'Bootstrap',    logo: '/assets/logos/bootstrap.png' },
+  { name: 'Node.js',      logo: '/assets/logos/node-js.png' },
+  { name: 'PHP',          logo: '/assets/logos/php.png' },
+  { name: 'Python',       logo: '/assets/logos/python.png' },
+  { name: 'Figma',        logo: '/assets/logos/figma.png' },
+  { name: 'GitHub',       logo: '/assets/logos/github.png' },
+  { name: 'C',            logo: '/assets/logos/letter-c.png' },
+  { name: 'Git',          logo: '/assets/logos/social.png' },
+]

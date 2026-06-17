@@ -1,0 +1,134 @@
+.footer {
+  background: var(--bg-primary);
+  padding: 60px 160px 0;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.topDivider {
+  height: 1px;
+  background: var(--border-color);
+  margin-bottom: 60px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1.8fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.logoImg {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+.tagline {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.bio {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 264px;
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.linkList a {
+  font-size: 13px;
+  color: var(--text-secondary);
+  transition: color 0.2s;
+}
+
+.linkList a:hover {
+  color: var(--text-primary);
+}
+
+.contactItem {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.socialBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.socialBtn:hover {
+  background: rgba(59, 130, 246, 0.08);
+  border-color: rgba(59, 130, 246, 0.25);
+  color: var(--text-primary);
+}
+
+.socialBtn i:first-child {
+  font-size: 16px;
+}
+
+.socialBtn i:last-child {
+  font-size: 11px;
+  margin-left: auto;
+}
+
+/* Bottom bar */
+.bottomBar {
+  margin-top: 0;
+}
+
+.bottomDivider {
+  height: 1px;
+  background: var(--border-color);
+  margin-bottom: 16px;
+}
+
+.bottomContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.copyright,
+.builtWith {
+  font-size: 12px;
+  color: var(--text-muted);
+}
