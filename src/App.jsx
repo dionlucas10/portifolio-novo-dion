@@ -1,3 +1,5 @@
+import { useState } from 'react'
+import Loader from './components/Loader/Loader'
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
 import About from './components/About/About'
@@ -11,8 +13,11 @@ import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 
 export default function App() {
+  const [loading, setLoading] = useState(true)
+
   return (
     <>
+      {loading && <Loader onFinish={() => setLoading(false)} />}
       <Navbar />
       <main>
         <Hero />

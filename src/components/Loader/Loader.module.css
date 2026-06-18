@@ -1,0 +1,134 @@
+/* ── Overlay ── */
+
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #080810;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.loader.exit {
+  animation: curtainUp 0.9s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+}
+
+@keyframes curtainUp {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-100%); }
+}
+
+/* ── Scene ──
+   Block (80px) + gap (44px) + Mario (156px) = 280px total
+   At jump peak (-56px): Mario head reaches block bottom (punches through)
+   At 70% (-44px): exact contact
+*/
+
+.scene {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 280px;
+}
+
+/* ── Ground line ── */
+
+.ground {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.07) 15%,
+    rgba(255, 255, 255, 0.07) 85%,
+    transparent
+  );
+}
+
+/* ── Block ── */
+
+.blockWrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.blockBounce {
+  animation: blockBounce 0.5s ease;
+}
+
+@keyframes blockBounce {
+  0%   { transform: translateX(-50%) translateY(0); }
+  35%  { transform: translateX(-50%) translateY(-24px); }
+  100% { transform: translateX(-50%) translateY(0); }
+}
+
+/* ── Coin ── */
+
+.coin {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  animation: coinPop 0.75s ease-out forwards;
+}
+
+@keyframes coinPop {
+  from { transform: translateX(-50%) translateY(0);    opacity: 1; }
+  to   { transform: translateX(-50%) translateY(-80px); opacity: 0; }
+}
+
+/* ── Mario sprite div ──
+   Uses the sprite sheet as background-image.
+   background-position-x is set via inline style.
+   Width covers widest walking frame (17px × 3 = 51px) with margin.
+   Height = 52px × 3 = 156px.
+*/
+
+.marioSprite {
+  width: 60px;
+  height: 156px;
+  background-image: url('/assets/mario-sprite.png');
+  background-size: 1215px 564px;   /* 405×3 by 188×3 */
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+}
+
+/* ── Mario horizontal ── */
+
+.marioX {
+  position: absolute;
+  bottom: 0;
+  left: -100px;
+}
+
+.walking {
+  animation: walkX 1.7s linear forwards;
+}
+
+@keyframes walkX {
+  from { left: -100px; }
+  to   { left: calc(50% - 30px); }
+}
+
+/* ── Mario vertical (jump) ── */
+
+.marioY {
+  /* baseline */
+}
+
+.jumping {
+  animation: jumpY 0.5s ease;
+}
+
+@keyframes jumpY {
+  0%   { transform: translateY(0); }
+  40%  { transform: translateY(-56px); }
+  70%  { transform: translateY(-44px); }
+  100% { transform: translateY(0); }
+}

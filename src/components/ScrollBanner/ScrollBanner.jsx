@@ -1,6 +1,6 @@
 import styles from './ScrollBanner.module.css'
 
-const words = ['ESBOÇO', 'DESIGN', 'DESENVOLVIMENTO', 'FRONT-END', 'UI/UX']
+const words = ['ESBOÇO', 'DESIGN', 'DESENVOLVIMENTO', 'FRONT-END', 'UI/UX', 'RESPONSIVO', 'INTERATIVO', 'MODERNO', 'BACK-END', 'FULL-STACK', 'APLICAÇÕES', 'WEB', 'MOBILE', 'PROJETOS', 'CRIATIVIDADE', 'INOVAÇÃO', 'TECNOLOGIA', 'FUTURO']
 
 function BannerContent() {
   return (

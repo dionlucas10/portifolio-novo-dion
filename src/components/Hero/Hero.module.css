@@ -46,9 +46,9 @@
 
 .textPhoto {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
 
 .software,
@@ -63,13 +63,30 @@
   white-space: nowrap;
 }
 
+.software {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.developer {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.textStroke {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.65);
+  z-index: 5;
+  pointer-events: none;
+}
+
 .photoWrapper {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
-  width: clamp(220px, 28vw, 380px);
+  width: clamp(260px, 34vw, 460px);
   pointer-events: none;
 }
 
@@ -105,11 +122,12 @@
 /* Círculo rotativo */
 .circleWrapper {
   position: absolute;
-  bottom: 60px;
-  right: 120px;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 120px;
   height: 120px;
-  z-index: 4;
+  z-index: 6;
 }
 
 .circleBg {

@@ -9,13 +9,15 @@
 
 .track {
   display: flex;
-  white-space: nowrap;
   animation: scroll 25s linear infinite;
 }
 
 .content {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: space-evenly;
+  flex-shrink: 0;
+  min-width: 100%;
 }
 
 .item {

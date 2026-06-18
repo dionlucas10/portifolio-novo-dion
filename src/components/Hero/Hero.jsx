@@ -41,6 +41,7 @@ export default function Hero() {
 
         <div className={styles.textPhoto}>
           <h1 className={styles.software}>SOFTWARE</h1>
+          <h1 className={`${styles.software} ${styles.textStroke}`} aria-hidden="true">SOFTWARE</h1>
           <div className={styles.photoWrapper}>
             <img
               src="/assets/PXL_20240721_173453884__1_-removebg-preview.png"
@@ -50,6 +51,7 @@ export default function Hero() {
             />
           </div>
           <h1 className={styles.developer}>DEVELOPER</h1>
+          <h1 className={`${styles.developer} ${styles.textStroke}`} aria-hidden="true">DEVELOPER</h1>
         </div>
       </div>
 

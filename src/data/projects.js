@@ -7,7 +7,7 @@ export const projects = [
     description:
       'Meu primeiro projeto freelance. Site institucional responsivo para uma agência de turismo com layout moderno, navegação intuitiva e ótima experiência do usuário.',
     color: '#1e3a5f',
-    link: '#',
+    link: 'https://ailturturismo.vercel.app/',
     image: '/assets/projetos/ailtu.png',
   },
   {
