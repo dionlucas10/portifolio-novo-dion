@@ -4,9 +4,9 @@
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: #080810;
+  background: #5C94FC;
   overflow: hidden;
-  pointer-events: none;
+  cursor: pointer;
 }
 
 .loader.exit {
@@ -28,26 +28,23 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 44px;
   height: 280px;
 }
 
-/* ── Ground line ── */
+/* ── Background ground strip ── */
 
-.ground {
+.bgGround {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 2px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    rgba(255, 255, 255, 0.07) 15%,
-    rgba(255, 255, 255, 0.07) 85%,
-    transparent
-  );
+  height: 64px;
+  background: #C47800;
+  border-top: 4px solid #E8A420;
+  background-image:
+    repeating-linear-gradient(90deg, rgba(0,0,0,0.12) 0 2px, transparent 2px 64px),
+    repeating-linear-gradient(0deg, rgba(0,0,0,0.10) 0 2px, transparent 2px 32px);
 }
 
 /* ── Block ── */
@@ -92,11 +89,12 @@
 
 .marioSprite {
   width: 60px;
-  height: 156px;
+  height: 78px;
   background-image: url('/assets/mario-sprite.png');
   background-size: 1215px 564px;   /* 405×3 by 188×3 */
   background-repeat: no-repeat;
   image-rendering: pixelated;
+  transform: scaleX(-1);
 }
 
 /* ── Mario horizontal ── */
@@ -128,7 +126,29 @@
 
 @keyframes jumpY {
   0%   { transform: translateY(0); }
-  40%  { transform: translateY(-56px); }
-  70%  { transform: translateY(-44px); }
+  40%  { transform: translateY(-130px); }
+  70%  { transform: translateY(-118px); }
   100% { transform: translateY(0); }
+}
+
+/* ── Press Start ── */
+
+.pressStart {
+  position: absolute;
+  bottom: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: monospace;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: #fff;
+  white-space: nowrap;
+  animation: blink 1s step-end infinite;
+  user-select: none;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
 }
