@@ -14,38 +14,40 @@ export default function Navbar() {
   const closeMenu = () => setMenuOpen(false)
 
   return (
-    <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
-      <div className={styles.logo}>
-        <img src="/assets/logo1.png" alt="Dion Lucas" className={styles.logoImg} />
-      </div>
-
-      <ul className={styles.navLinks}>
-        <li><a href="#hero">INÍCIO</a></li>
-        <li><a href="#about">PÁGINAS</a></li>
-        <li><a href="#about">SERVIÇOS</a></li>
-        <li><a href="#projects">PROJETOS</a></li>
-        <li><a href="#contact">BLOG</a></li>
-        <li><a href="#contact">CONTATO</a></li>
-      </ul>
-
-      <div className={styles.navRight}>
-        <div className={styles.socialIcons}>
-          <a href="#" aria-label="Stats"><i className="bi bi-bar-chart-fill" /></a>
-          <a href="#" aria-label="Info"><i className="bi bi-info-circle" /></a>
-          <a href="#" aria-label="Globe"><i className="bi bi-globe" /></a>
+    <>
+      <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
+        <div className={styles.logo}>
+          <img src="/assets/logo1.png" alt="Dion Lucas" className={styles.logoImg} />
         </div>
-        <a href="/cv.pdf" className={styles.cvBtn} download>
-          BAIXAR CV
-        </a>
-      </div>
 
-      <button
-        className={styles.hamburger}
-        onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Menu"
-      >
-        <i className={`bi ${menuOpen ? 'bi-x' : 'bi-list'}`} />
-      </button>
+        <ul className={styles.navLinks}>
+          <li><a href="#hero">INÍCIO</a></li>
+          <li><a href="#about">PÁGINAS</a></li>
+          <li><a href="#about">SERVIÇOS</a></li>
+          <li><a href="#projects">PROJETOS</a></li>
+          <li><a href="#contact">BLOG</a></li>
+          <li><a href="#contact">CONTATO</a></li>
+        </ul>
+
+        <div className={styles.navRight}>
+          <div className={styles.socialIcons}>
+            <a href="#" aria-label="Stats"><i className="bi bi-bar-chart-fill" /></a>
+            <a href="#" aria-label="Info"><i className="bi bi-info-circle" /></a>
+            <a href="#" aria-label="Globe"><i className="bi bi-globe" /></a>
+          </div>
+          <a href="/cv.pdf" className={styles.cvBtn} download>
+            BAIXAR CV
+          </a>
+        </div>
+
+        <button
+          className={styles.hamburger}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Menu"
+        >
+          <i className={`bi ${menuOpen ? 'bi-x' : 'bi-list'}`} />
+        </button>
+      </nav>
 
       {menuOpen && (
         <div className={styles.mobileMenu}>
@@ -69,6 +71,6 @@ export default function Navbar() {
           </a>
         </div>
       )}
-    </nav>
+    </>
   )
 }
