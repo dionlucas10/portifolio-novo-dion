@@ -22,9 +22,10 @@ export default function Navbar() {
 
         <ul className={styles.navLinks}>
           <li><a href="#hero">INÍCIO</a></li>
-          <li><a href="#about">PÁGINAS</a></li>
-          <li><a href="#about">SERVIÇOS</a></li>
+          <li><a href="#about">SOBRE MIM</a></li>
           <li><a href="#projects">PROJETOS</a></li>
+          <li><a href="#technologies">TECNOLOGIAS</a></li>
+          <li><a href="#certificates">CERTIFICADOS</a></li>
           <li><a href="#experience">TRILHA</a></li>
           <li><a href="#contact">CONTATO</a></li>
         </ul>
