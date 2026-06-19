@@ -45,7 +45,7 @@ const trail = [
     role: 'GVA · Estagiário',
     period: 'Junho 2026 → até hoje',
     desc: 'Estágio Home Office em desenvolvimento web. Aprendizado prático, colaboração em equipe e aplicação de conhecimentos adquiridos na Alura e toda minha formação.',
-    image: '/exp-estagio.jpg',
+    image: './assets/expeciencia/estagio.png',
     side: 'left',
   },
 ]
