@@ -1,6 +1,7 @@
 .about {
   background: var(--bg-secondary);
   padding: 100px 160px;
+  position: relative;
 }
 
 .container {
@@ -100,11 +101,13 @@
 
 .circleDecor {
   position: absolute;
-  top: 50%;
+  top: calc(80% + 60px);
   left: 50%;
   transform: translate(-50%, -50%);
   width: 160px;
   height: 160px;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .circleTextSvg {

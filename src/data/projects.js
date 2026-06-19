@@ -18,7 +18,7 @@ export const projects = [
     description:
       'Interface no estilo streaming de música com tema dark, grid de cards, navegação responsiva e hierarquia visual bem definida.',
     color: '#3b0764',
-    link: '#',
+    link: 'https://musicmax-sigma.vercel.app/',
     image: '/assets/projetos/musicmax.png',
   },
   {
@@ -29,7 +29,7 @@ export const projects = [
     description:
       'Aplicativo web de produtividade baseado na técnica Pomodoro. Manipulação de DOM, UI limpa e timers interativos para sessões de foco.',
     color: '#14532d',
-    link: '#',
+    link: 'https://fokus-alu.vercel.app/',
     image: '/assets/projetos/fokus.png',
   },
   {
@@ -40,7 +40,7 @@ export const projects = [
     description:
       'Plataforma de vitrine de e-books com grid limpo, filtros de conteúdo e experiência focada na leitura.',
     color: '#713f12',
-    link: '#',
+    link: 'https://alurabook-nine-puce.vercel.app/',
     image: '/assets/projetos/alurabook.png',
   },
 ]

@@ -25,17 +25,12 @@ export default function Navbar() {
           <li><a href="#about">PÁGINAS</a></li>
           <li><a href="#about">SERVIÇOS</a></li>
           <li><a href="#projects">PROJETOS</a></li>
-          <li><a href="#contact">BLOG</a></li>
+          <li><a href="#experience">TRILHA</a></li>
           <li><a href="#contact">CONTATO</a></li>
         </ul>
 
         <div className={styles.navRight}>
-          <div className={styles.socialIcons}>
-            <a href="#" aria-label="Stats"><i className="bi bi-bar-chart-fill" /></a>
-            <a href="#" aria-label="Info"><i className="bi bi-info-circle" /></a>
-            <a href="#" aria-label="Globe"><i className="bi bi-globe" /></a>
-          </div>
-          <a href="/cv.pdf" className={styles.cvBtn} download>
+          <a href="https://canva.link/7uhu8g0tgejx0ei" className={styles.cvBtn} download>
             BAIXAR CV
           </a>
         </div>

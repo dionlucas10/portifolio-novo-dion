@@ -17,7 +17,7 @@ export default function App() {
 
   return (
     <>
-      {loading && <Loader onFinish={() => setLoading(false)} />}
+{loading && <Loader onFinish={() => setLoading(false)} />}
       <Navbar />
       <main>
         <Hero />
