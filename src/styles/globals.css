@@ -84,3 +84,27 @@ button {
   opacity: 1;
   transform: translateX(0);
 }
+
+/* Scrollbar customizado */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.4);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.75);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(59, 130, 246, 0.4) var(--bg-primary);
+}
