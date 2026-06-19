@@ -9,7 +9,7 @@ const trail = [
     role: 'Autodidata · Estudante',
     period: 'Jan 2024 → Jun 2024',
     desc: 'Primeiros passos com HTML, CSS e JavaScript. Descobri minha paixão por desenvolvimento web e criação de interfaces modernas.',
-    image: null,
+    image: './assets/expeciencia/comeco.jpg',
     side: 'left',
   },
   {
@@ -18,7 +18,7 @@ const trail = [
     role: 'Mastery Med · Desenvolvedor',
     period: 'Out 2024 → Out 2024',
     desc: 'Competição de tecnologia e saúde. Desenvolvemos uma solução web funcional em equipe em menos de 48 horas.',
-    image: null,
+    image: './assets/expeciencia/mastery.jpg',
     side: 'right',
   },
   {
@@ -26,18 +26,27 @@ const trail = [
     title: 'Freelancer Front-End',
     role: 'Ailtur Turismo · Dev Front-End',
     period: 'Mar 2025 → Ago 2025',
-    desc: 'Desenvolvimento do site institucional completo. Layout responsivo, navegação moderna e entrega do produto ao cliente.',
-    image: null,
+    desc: 'Desenvolvimento de landing pages e sites institucionais. Aprimoramento das habilidades em HTML, CSS, JavaScript e frameworks modernos.',
+    image: './assets/expeciencia/ailtu.png',
     side: 'left',
   },
   {
     icon: 'bi-book',
     title: 'Entrei para a plataforma Alura',
     role: 'Alura · Aluno',
-    period: 'Set 2025 → até hoje',
-    desc: 'Formação completa em desenvolvimento web: HTML, CSS, JavaScript, boas práticas, acessibilidade e projetos reais publicados.',
-    image: null,
+    period: 'Novembro 2025 → até hoje',
+    desc: 'Cursos de desenvolvimento web, front-end e back-end. Aprendizado contínuo, prática de projetos e aprimoramento das habilidades técnicas.',
+    image: './assets/expeciencia/alura.png',
     side: 'right',
+  },
+  {
+    icon: 'bi-book',
+    title: 'Meu primeiro estágio',
+    role: 'GVA · Estagiário',
+    period: 'Junho 2026 → até hoje',
+    desc: 'Estágio Home Office em desenvolvimento web. Aprendizado prático, colaboração em equipe e aplicação de conhecimentos adquiridos na Alura e toda minha formação.',
+    image: '/exp-estagio.jpg',
+    side: 'left',
   },
 ]
 
@@ -90,13 +99,23 @@ export default function Experience() {
               <div className={styles.card}>
                 <div className={styles.imageArea}>
                   {item.image ? (
-                    <img src={item.image} alt={item.title} className={styles.image} />
-                  ) : (
-                    <div className={styles.imagePlaceholder}>
-                      <i className={`bi ${item.icon} ${styles.placeholderIcon}`} />
-                      <span className={styles.placeholderText}>[ Adicione sua imagem ]</span>
-                    </div>
-                  )}
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className={styles.image}
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none'
+                        e.currentTarget.nextSibling.style.display = 'flex'
+                      }}
+                    />
+                  ) : null}
+                  <div
+                    className={styles.imagePlaceholder}
+                    style={{ display: item.image ? 'none' : 'flex' }}
+                  >
+                    <i className={`bi ${item.icon} ${styles.placeholderIcon}`} />
+                    <span className={styles.placeholderText}>[ Adicione sua imagem ]</span>
+                  </div>
                   <div className={styles.imageGradient} />
                 </div>
 
