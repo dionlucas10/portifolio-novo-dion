@@ -201,3 +201,61 @@
   margin-top: 8px;
   margin-left: 20px;
 }
+
+@media (max-width: 1024px) {
+  .content {
+    padding: 0 24px;
+  }
+
+  .arrow {
+    right: 32px;
+    bottom: 60px;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 0 20px;
+  }
+
+  .imA {
+    font-size: clamp(28px, 7vw, 56px);
+    padding-left: 2%;
+  }
+
+  .software,
+  .developer {
+    font-size: clamp(44px, 11vw, 100px);
+  }
+
+  .floatingLogo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .circleWrapper {
+    display: none;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .decorSquares {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .software,
+  .developer {
+    font-size: clamp(32px, 9vw, 72px);
+  }
+
+  .floatingLogo {
+    width: 24px;
+    height: 24px;
+    opacity: 0.5;
+  }
+}

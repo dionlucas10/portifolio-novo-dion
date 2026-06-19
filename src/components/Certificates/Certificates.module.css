@@ -162,3 +162,35 @@
   background: var(--accent-blue);
   transform: scale(1.4);
 }
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 80px 60px;
+  }
+
+  .carousel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 64px 24px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .carousel {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 48px 16px;
+  }
+}

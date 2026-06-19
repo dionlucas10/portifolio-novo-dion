@@ -101,3 +101,25 @@
   background: rgba(59, 130, 246, 0.1);
   border-color: var(--accent-blue);
 }
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 80px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 64px 24px;
+  }
+
+  .quote {
+    font-size: clamp(14px, 3.5vw, 18px);
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 48px 16px;
+  }
+}

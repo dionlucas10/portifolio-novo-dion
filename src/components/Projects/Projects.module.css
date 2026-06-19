@@ -150,3 +150,55 @@
   background: rgba(59, 130, 246, 0.12);
   border-color: var(--accent-blue);
 }
+
+@media (max-width: 1024px) {
+  .projects {
+    padding: 80px 60px;
+  }
+
+  .card,
+  .card.reversed {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .card.reversed .imageSide {
+    order: 0;
+  }
+
+  .card.reversed .infoSide {
+    order: 0;
+  }
+
+  .imageSide {
+    min-height: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 64px 24px;
+  }
+
+  .imageSide {
+    min-height: 220px;
+  }
+
+  .infoSide {
+    padding: 28px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    padding: 48px 16px;
+  }
+
+  .imageSide {
+    min-height: 180px;
+  }
+
+  .infoSide {
+    padding: 20px 16px;
+  }
+}

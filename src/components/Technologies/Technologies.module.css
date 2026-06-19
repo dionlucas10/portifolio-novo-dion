@@ -102,3 +102,29 @@
   text-align: center;
   white-space: nowrap;
 }
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 64px 0;
+  }
+
+  .container {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 48px 0;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+}

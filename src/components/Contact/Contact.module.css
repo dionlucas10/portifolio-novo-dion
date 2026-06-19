@@ -127,6 +127,18 @@
   transform: translateY(-1px);
 }
 
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.errorMsg {
+  color: #f87171;
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+
 /* Right side decorativo */
 .rightDecor {
   display: flex;
@@ -145,4 +157,36 @@
   text-orientation: mixed;
   letter-spacing: 0.15em;
   user-select: none;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 80px 60px;
+  }
+
+  .body {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .rightDecor {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 64px 24px;
+  }
+
+  .submitBtn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 48px 16px;
+  }
 }
